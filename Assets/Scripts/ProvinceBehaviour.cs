@@ -10,22 +10,28 @@ public class ProvinceBehaviour : MonoBehaviour
     public Province province;
     
     private SpriteRenderer _sprite;
-
-    public Color32 colorRP;
-    public Color32 colorG;
-    public Color32 colorM;
-    public Color32 colorH;
+    
     private void Awake()
     {
         _sprite = GetComponent<SpriteRenderer>();
-        colorRP = new Color32(252, 239, 234, 255);
-        colorG = new Color32(255,235,205,255);
-        colorM = new Color32(225, 243, 252, 255);
-        colorH = new Color32(211, 232, 211, 255);
+        province.fortressState = 0;
+        province.economicState = 1;
+        province.provincePower = province.militaryPower + 10000 * (province.fortressState + 1);
     }
 
     private void OnMouseDown()
     {
-        _sprite.color = colorM;
+        _sprite.color = new Color32(211, 232, 211, 255);
+    }
+
+    public void TintColor(Color32 color)
+    {
+        _sprite.color = color;
+    }
+
+    private void OnDrawGizmos()
+    {
+        province.name = this.name;
+        this.tag = "Province";
     }
 }
