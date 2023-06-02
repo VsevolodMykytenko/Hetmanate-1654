@@ -22,11 +22,13 @@ public class ProvinceBehaviour : MonoBehaviour
     private void OnMouseDown()
     {
         _sprite.color = new Color32(211, 232, 211, 255);
+        _sprite.material.color = new Color32(211, 232, 211, 255);
     }
 
     public void TintColor(Color32 color)
     {
         _sprite.color = color;
+        _sprite.material.color = color;
     }
 
     private void OnDrawGizmos()
