@@ -5,52 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44baa713-d22e-4e4b-852a-be4811286fd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Hetmanate-1654/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Hetmanate-1654/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Map.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Map/Карта_for_Unity_Image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Map/Карта_for_Unity_Image.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RiderFlow.UserData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor/Scenes/Bookmarks.Map.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Province.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Province.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ProvinceBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ProvinceBehaviour.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ProvinceManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ProvinceManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hetmanate-1654/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hetmanate-1654/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Black.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/LightGreen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/LightGreen.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Orange.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Red.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Yellow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default22662.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default22662.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default54.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default54.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/20 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/20 - Default.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/22 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/22 - Default.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/24 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/24 - Default.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/No Name.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/insides_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/insides_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/tank.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/tank.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerName.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerName.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerListItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerListItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
