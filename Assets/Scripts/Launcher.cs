@@ -19,6 +19,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject _roomButtonPrefab;
     [SerializeField] private Transform _playerList;
     [SerializeField] private GameObject _playerNamePrefab;
+    [SerializeField] private GameObject _startGameButton;
     private void Start()
     {
         instance = this;
@@ -32,6 +33,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined to Master-server");
         PhotonNetwork.JoinLobby();
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
     
     public override void OnJoinedLobby()
@@ -41,6 +43,11 @@ public class Launcher : MonoBehaviourPunCallbacks
         PhotonNetwork.NickName = "Player" + Random.Range(0, 1000).ToString("0000");
     }
 
+    public void StartGame()
+    {
+        PhotonNetwork.LoadLevel(1);
+    }
+    
     public void CreateRoom()
     {
         if (string.IsNullOrEmpty(_roomInputField.text))
@@ -67,8 +74,15 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             Instantiate(_playerNamePrefab, _playerList).GetComponent<PlayerListItem>().SetUp(players[i]);
         }
+        
+        _startGameButton.SetActive(PhotonNetwork.IsMasterClient);
     }
 
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        _startGameButton.SetActive(PhotonNetwork.IsMasterClient);
+    }
+    
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         _errorText.text = "Error: " + message;
