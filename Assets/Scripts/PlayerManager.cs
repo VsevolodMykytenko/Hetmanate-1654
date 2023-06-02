@@ -13,12 +13,12 @@ public class PlayerManager : MonoBehaviour
         _photonView = GetComponent<PhotonView>();
         if (_photonView.IsMine)
         {
-            CreateController();
+  //          CreateController();
         }
     }
 //???
-    private void CreateController()
-    {
-        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", ))
-    }
+ //   private void CreateController()
+ //   {
+ //       PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", ))
+ //   }
 }
