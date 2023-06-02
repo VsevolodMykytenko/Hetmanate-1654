@@ -40,7 +40,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined Lobby");
         MenuManager.instance.OpenMenu("title");
-        PhotonNetwork.NickName = "Player" + Random.Range(0, 1000).ToString("0000");
+        PhotonNetwork.NickName = "Player " + Random.Range(0, 1000).ToString("0000");
     }
 
     public void StartGame()

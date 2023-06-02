@@ -7,10 +7,8 @@ using UnityEngine;
 
 public class PlayerListItem : MonoBehaviourPunCallbacks
 {
-    private TMP_Text playerName;
     private Player _player;
-
-    [SerializeField] private TMP_Text palyerName;
+    [SerializeField] private TMP_Text playerName;
 
     public void SetUp(Player player)
     {
