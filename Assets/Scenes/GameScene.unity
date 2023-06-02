@@ -373,7 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_M_2
-    faction: 0
+    faction: 2
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_H_4
-    faction: 0
+    faction: 3
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_RP_1
-    faction: 2
+    faction: 0
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_M_1
-    faction: 0
+    faction: 2
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_H_1
-    faction: 0
+    faction: 3
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -1302,7 +1302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_G_4
-    faction: 0
+    faction: 1
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_G_2
-    faction: 0
+    faction: 1
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -1594,7 +1594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_G_3
-    faction: 0
+    faction: 1
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -1739,7 +1739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_G_1
-    faction: 0
+    faction: 1
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_RP_2
-    faction: 1
+    faction: 0
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -2079,7 +2079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_H_2
-    faction: 0
+    faction: 3
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -2229,7 +2229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_M_4
-    faction: 0
+    faction: 2
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -2470,7 +2470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_H_3
-    faction: 0
+    faction: 3
     economicState: 0
     fortressState: 0
     militaryPower: 0
@@ -2607,7 +2607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   province:
     name: Map_M_3
-    faction: 0
+    faction: 2
     economicState: 0
     fortressState: 0
     militaryPower: 0
