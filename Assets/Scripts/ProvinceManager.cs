@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -19,14 +20,14 @@ public class ProvinceManager : MonoBehaviour
         AddProvinceData();
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            TintProvinces();
-            // ShowTowerTokens();
-        }
-    }
+    // private void Update()
+    // {
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         TintProvinces();
+    //         // ShowTowerTokens();
+    //     }
+    // }
 
     void AddProvinceData ()
     {
@@ -36,7 +37,6 @@ public class ProvinceManager : MonoBehaviour
             provinceList.Add(province);
         }
         TintProvinces();
-        // ShowTowerTokens();
     }
     
     void TintProvinces()
@@ -49,6 +49,8 @@ public class ProvinceManager : MonoBehaviour
             GameObject soldierG = GameObject.Find(provinceBehaviour.province.name + "_SoldierG");
             GameObject soldierM = GameObject.Find(provinceBehaviour.province.name + "_SoldierM");
             GameObject soldierH = GameObject.Find(provinceBehaviour.province.name + "_SoldierH");
+            GameObject soldierCounter = GameObject.Find(provinceBehaviour.province.name + "_SoldierCounter");
+            soldierCounter.GetComponent<TextMeshProUGUI>().enabled = false;
             soldierRP.GetComponent<SpriteRenderer>().enabled = false;
             soldierG.GetComponent<SpriteRenderer>().enabled = false;
             soldierM.GetComponent<SpriteRenderer>().enabled = false;
@@ -61,6 +63,8 @@ public class ProvinceManager : MonoBehaviour
                     if (provinceBehaviour.province.militaryPower != 0)
                     {
                         soldierRP.GetComponent<SpriteRenderer>().enabled = true;
+                        soldierCounter.GetComponent<TextMeshProUGUI>().enabled = true;
+                        soldierCounter.GetComponent<TextMeshProUGUI>().text = "x" + provinceBehaviour.province.militaryPower / 5000;
                     }
                     break;
                 
@@ -69,6 +73,8 @@ public class ProvinceManager : MonoBehaviour
                     if (provinceBehaviour.province.militaryPower != 0)
                     {
                         soldierG.GetComponent<SpriteRenderer>().enabled = true;
+                        soldierCounter.GetComponent<TextMeshProUGUI>().enabled = true;
+                        soldierCounter.GetComponent<TextMeshProUGUI>().text = "x" + provinceBehaviour.province.militaryPower / 5000;
                     }
                     break;
                 
@@ -77,6 +83,8 @@ public class ProvinceManager : MonoBehaviour
                     if (provinceBehaviour.province.militaryPower != 0)
                     {
                         soldierM.GetComponent<SpriteRenderer>().enabled = true;
+                        soldierCounter.GetComponent<TextMeshProUGUI>().enabled = true;
+                        soldierCounter.GetComponent<TextMeshProUGUI>().text = "x" + provinceBehaviour.province.militaryPower / 5000;
                     }
                     break;
                 
@@ -85,6 +93,8 @@ public class ProvinceManager : MonoBehaviour
                     if (provinceBehaviour.province.militaryPower != 0)
                     {
                         soldierH.GetComponent<SpriteRenderer>().enabled = true;
+                        soldierCounter.GetComponent<TextMeshProUGUI>().enabled = true;
+                        soldierCounter.GetComponent<TextMeshProUGUI>().text = "x" + provinceBehaviour.province.militaryPower / 5000;
                     }
                     break;
             }
@@ -109,40 +119,5 @@ public class ProvinceManager : MonoBehaviour
             }
         }
     }
-
-    // void ShowTowerTokens()
-    // {
-    //     for (int i = 0; i < provinceList.Count; i++)
-    //     {
-    //         ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
-    //         
-    //         GameObject tower1 = GameObject.Find(provinceBehaviour.province.name + "_Tower1");
-    //         GameObject tower2 = GameObject.Find(provinceBehaviour.province.name + "_Tower2");
-    //         
-    //         switch (provinceBehaviour.province.fortressState)
-    //         {
-    //             case 0:
-    //                 tower1.GetComponent<SpriteRenderer>().enabled = false;
-    //                 tower2.GetComponent<SpriteRenderer>().enabled = false;
-    //                 break;
-    //             case 1:
-    //                 tower1.GetComponent<SpriteRenderer>().enabled = true;
-    //                 tower2.GetComponent<SpriteRenderer>().enabled = false;
-    //                 break;
-    //             case 2:
-    //                 tower1.GetComponent<SpriteRenderer>().enabled = false;
-    //                 tower2.GetComponent<SpriteRenderer>().enabled = true;
-    //                 break;
-    //         }
-    //         
-    //     }
-    // }
-    //
-    // void ShowSoldierTokens()
-    // {
-    //     for (int i = 0; i < provinceList.Count; i++)
-    //     {
-    //         ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
-    //     }
-    // }
+    
 }
