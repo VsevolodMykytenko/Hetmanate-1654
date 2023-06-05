@@ -16,6 +16,7 @@ public class ProvinceBehaviour : MonoBehaviour
         _sprite = GetComponent<SpriteRenderer>();
         province.fortressState = 0;
         province.economicState = 1;
+        province.militaryPower = 0;
         province.provincePower = province.militaryPower + 10000 * (province.fortressState + 1);
     }
 
@@ -35,5 +36,6 @@ public class ProvinceBehaviour : MonoBehaviour
     {
         province.name = this.name;
         this.tag = "Province";
+        province.provincePower = province.militaryPower + 10000 * (province.fortressState + 1);
     }
 }
