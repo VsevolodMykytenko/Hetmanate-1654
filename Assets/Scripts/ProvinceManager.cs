@@ -20,14 +20,19 @@ public class ProvinceManager : MonoBehaviour
         AddProvinceData();
     }
 
-    // private void Update()
-    // {
-    //     if (Input.GetMouseButtonDown(0))
-    //     {
-    //         TintProvinces();
-    //         // ShowTowerTokens();
-    //     }
-    // }
+    void Quit()
+    {
+        Application.Quit();
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            TintProvinces();
+            // TestSync();
+        }
+    }
 
     void AddProvinceData ()
     {
@@ -119,5 +124,34 @@ public class ProvinceManager : MonoBehaviour
             }
         }
     }
-    
+
+    void TestSync()
+    {
+        for (int i = 0; i < provinceList.Count; i++)
+        {
+            ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
+            switch (provinceBehaviour.province.faction)
+            {
+                case Province.Factions.RichPospolita:
+                    provinceBehaviour.TintColor(new Color32(255, 235, 205, 255));
+                    provinceBehaviour.province.faction = Province.Factions.Hetmanate;
+                    break;
+
+                case Province.Factions.Hetmanate:
+                    provinceBehaviour.TintColor(new Color32(225, 243, 252, 255));
+                    provinceBehaviour.province.faction = Province.Factions.Moscovy;
+                    break;
+
+                case Province.Factions.Moscovy:
+                    provinceBehaviour.TintColor(new Color32(211, 232, 211, 255));
+                    provinceBehaviour.province.faction = Province.Factions.Khanate;
+                    break;
+
+                case Province.Factions.Khanate:
+                    provinceBehaviour.TintColor(new Color32(252, 239, 234, 255));
+                    provinceBehaviour.province.faction = Province.Factions.RichPospolita;
+                    break;
+            }
+        }
+    }
 }
