@@ -20,14 +20,14 @@ public class ProvinceManager : MonoBehaviour
         AddProvinceData();
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            TintProvinces();
-            // ShowTowerTokens();
-        }
-    }
+    // private void Update()
+    // {
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         TintProvinces();
+    //         // ShowTowerTokens();
+    //     }
+    // }
 
     void AddProvinceData ()
     {
