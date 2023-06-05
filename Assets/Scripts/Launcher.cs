@@ -55,6 +55,8 @@ public class Launcher : MonoBehaviourPunCallbacks
             return;
         }
         PhotonNetwork.CreateRoom(_roomInputField.text);
+        RoomOptions roomOptions = new RoomOptions();
+        roomOptions.MaxPlayers = 4;
         MenuManager.instance.OpenMenu("loading");
     }
 
