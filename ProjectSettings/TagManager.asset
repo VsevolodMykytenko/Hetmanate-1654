@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Province
+  - Tower
+  - Soldier
   layers:
   - Default
   - TransparentFX
