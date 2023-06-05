@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa713-d22e-4e4b-852a-be4811286fd0" name="Changes" comment="" />
+    <list default="true" id="44baa713-d22e-4e4b-852a-be4811286fd0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hetmanate-1654/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hetmanate-1654/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RoomButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RoomButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoomListItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoomListItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoomManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +53,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Hetmanate-1654/Hetmanate-1654.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\Diplom\Hetmanate-1654\Hetmanate-1654" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\Editor\2021.3.23f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Diplom\Hetmanate-1654 -debugCodeOptimization" />
