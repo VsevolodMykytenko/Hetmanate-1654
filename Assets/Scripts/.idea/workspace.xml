@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d41f870c-09ef-45b5-89ef-b880c381d7be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/.idea.Hetmanate-1654/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/.idea.Hetmanate-1654/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/RoomButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/RoomButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Launcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProvinceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProvinceBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProvinceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProvinceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RoomListItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RoomListItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RoomManager.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2QpQfwvQ2JI2PtUc5SmWfuTzvbB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d41f870c-09ef-45b5-89ef-b880c381d7be" name="Changes" comment="" />
+      <created>1686048153386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686048153386</updated>
+      <workItem from="1686048155474" duration="130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
