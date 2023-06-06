@@ -35,6 +35,7 @@ public class ProvinceBehaviour : MonoBehaviour
     {
         GameObject provinceDataField = GameObject.Find("ProvinceDataField");
         provinceDataField.GetComponent<TextMeshProUGUI>().text = "Інформація про провінцію:<br><br>Назва: "+ province.getStringName() +
+                                                                 "<br><br>Фракція: "+ province.faction +
                                                                  "<br><br>Економічне становище: "+ province.economicState +
                                                                  "<br><br>Рівень укріплень: "+ province.fortressState +
                                                                  "<br><br>Сила війск: "+ province.militaryPower +
