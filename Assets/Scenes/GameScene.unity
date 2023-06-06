@@ -1020,7 +1020,6 @@ GameObject:
   - component: {fileID: 129179752}
   - component: {fileID: 129179751}
   - component: {fileID: 129179755}
-  - component: {fileID: 129179756}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1131,19 +1130,6 @@ MonoBehaviour:
   _playerList: {fileID: 0}
   _playerNamePrefab: {fileID: 0}
   _startGameButton: {fileID: 0}
---- !u!114 &129179756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129179750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365ad676998bf784285b74ed95c5ba2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  provinceList: []
 --- !u!1 &135597053
 GameObject:
   m_ObjectHideFlags: 0
@@ -10486,9 +10472,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1441549143}
-  - component: {fileID: 1441549142}
   - component: {fileID: 1441549145}
   - component: {fileID: 1441549144}
+  - component: {fileID: 1441549142}
   m_Layer: 0
   m_Name: ProvinceManager
   m_TagString: Untagged
@@ -10557,7 +10543,7 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 0
-  observableSearch: 2
+  observableSearch: 0
   ObservedComponents:
   - {fileID: 1441549144}
   sceneViewId: 1
