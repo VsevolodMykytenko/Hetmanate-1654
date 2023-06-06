@@ -27,7 +27,13 @@ public class Launcher : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
         MenuManager.instance.OpenMenu("loading");
     }
-    
+
+    public void OnQuit()
+    {
+        Debug.Log("Quiting Master-server");
+        Application.Quit();
+    }
+
     // ReSharper disable Unity.PerformanceAnalysis
     public override void OnConnectedToMaster()
     {
@@ -54,9 +60,11 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             return;
         }
-        PhotonNetwork.CreateRoom(_roomInputField.text);
+        
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 4;
+        roomOptions.MaxPlayers = 3;
+        
+        PhotonNetwork.CreateRoom(_roomInputField.text, roomOptions);
         MenuManager.instance.OpenMenu("loading");
     }
 

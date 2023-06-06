@@ -308,3 +308,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomName: {fileID: 6094289432403737703}
+  roomPlayerCount: {fileID: 6094289432403737703}
