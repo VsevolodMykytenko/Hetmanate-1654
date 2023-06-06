@@ -6,19 +6,20 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    private PhotonView _photonView;
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        _photonView = GetComponent<PhotonView>();
-        if (_photonView.IsMine)
-        {
-  //          CreateController();
-        }
+        testsync();
     }
-//???
- //   private void CreateController()
- //   {
- //       PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", ))
- //   }
+    
+    public void testsync()
+    { 
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("OnMouseDown", RpcTarget.All);
+    }
+    [PunRPC]
+    
+    void OnMouseDown() 
+    {
+        
+    }
 }

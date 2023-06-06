@@ -1,6 +1,9 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
+using Photon.Realtime;
+using UnityEngine.Networking;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,28 +11,60 @@ using UnityEngine;
 public class ProvinceManager : MonoBehaviour
 {
     public static ProvinceManager instance;
-
+    private PhotonView photonView;
     public List<GameObject> provinceList = new List<GameObject>();
     private void Awake()
     {
         instance = this;
+        photonView = GetComponent<PhotonView>();
     }
 
     void Start()
-    {
+    { ;
         AddProvinceData();
     }
+    
+     private void Update()
+     {
+         if (Input.GetMouseButtonDown(0))
+         {
+             photonView.RPC("ChangeColor", RpcTarget.All, null);
+             Debug.Log("Color is changed");
+         }
+     }
 
-    // private void Update()
-    // {
-    //     if (Input.GetMouseButtonDown(0))
-    //     {
-    //         TintProvinces();
-    //         // ShowTowerTokens();
-    //     }
-    // }
+     [PunRPC]
+     public void ChangeColor()
+     {
+        for (int i = 0; i < provinceList.Count; i++)
+         {
+             ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
+             switch (provinceBehaviour.province.faction)
+             {
+                 case Province.Factions.RichPospolita:
+                     provinceBehaviour.TintColor(new Color32(255, 235, 205, 255));
+                     provinceBehaviour.province.faction = Province.Factions.Hetmanate;
+                     break;
 
-    void AddProvinceData ()
+                 case Province.Factions.Hetmanate:
+                     provinceBehaviour.TintColor(new Color32(225, 243, 252, 255));
+                     provinceBehaviour.province.faction = Province.Factions.Moscovy;
+                     break;
+
+                 case Province.Factions.Moscovy:
+                     provinceBehaviour.TintColor(new Color32(211, 232, 211, 255));
+                     provinceBehaviour.province.faction = Province.Factions.Khanate;
+                     break;
+
+                 case Province.Factions.Khanate:
+                     provinceBehaviour.TintColor(new Color32(252, 239, 234, 255));
+                     provinceBehaviour.province.faction = Province.Factions.RichPospolita;
+                     break;
+             }
+         }
+     }
+
+     void AddProvinceData ()
     {
         GameObject[] theArray = GameObject.FindGameObjectsWithTag("Province") as GameObject[];
         foreach (GameObject province in theArray)
@@ -119,5 +154,4 @@ public class ProvinceManager : MonoBehaviour
             }
         }
     }
-    
 }
