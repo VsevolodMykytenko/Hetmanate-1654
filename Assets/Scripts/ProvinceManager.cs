@@ -20,11 +20,6 @@ public class ProvinceManager : MonoBehaviour
         AddProvinceData();
     }
 
-    void Quit()
-    {
-        Application.Quit();
-    }
-
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))

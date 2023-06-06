@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="44baa713-d22e-4e4b-852a-be4811286fd0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hetmanate-1654/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hetmanate-1654/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Province.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Province.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProvinceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProvinceBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProvinceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProvinceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +102,7 @@
       <updated>1685649217743</updated>
       <workItem from="1685649219282" duration="30000" />
       <workItem from="1685699957684" duration="6644000" />
-      <workItem from="1685962787082" duration="15842000" />
+      <workItem from="1685962787082" duration="17708000" />
     </task>
     <servers />
   </component>
