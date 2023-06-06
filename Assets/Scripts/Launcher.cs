@@ -30,7 +30,6 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public void OnQuit()
     {
-        Debug.Log("Quiting Master-server");
         Application.Quit();
     }
 
@@ -62,7 +61,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
         
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 3;
+        roomOptions.MaxPlayers = 4;
         
         PhotonNetwork.CreateRoom(_roomInputField.text, roomOptions);
         MenuManager.instance.OpenMenu("loading");

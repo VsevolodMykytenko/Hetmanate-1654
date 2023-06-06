@@ -28,7 +28,7 @@ public class ProvinceManager : MonoBehaviour
      {
          if (Input.GetMouseButtonDown(0))
          {
-             photonView.RPC("ChangeColor", RpcTarget.All, null);
+             photonView.RPC("TintProvinces", RpcTarget.All, null);
              Debug.Log("Color is changed");
          }
      }
