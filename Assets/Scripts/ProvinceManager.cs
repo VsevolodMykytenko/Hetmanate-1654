@@ -79,7 +79,6 @@ public class ProvinceManager : MonoBehaviour
         for (int i = 0; i < provinceList.Count; i++)
         {
             ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
-            provinceBehaviour.province.fortressState = 2;
             GameObject soldierRP = GameObject.Find(provinceBehaviour.province.name + "_SoldierRP");
             GameObject soldierG = GameObject.Find(provinceBehaviour.province.name + "_SoldierG");
             GameObject soldierM = GameObject.Find(provinceBehaviour.province.name + "_SoldierM");
