@@ -7,6 +7,7 @@ using UnityEngine.Networking;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ProvinceManager : MonoBehaviour
 {
@@ -20,49 +21,50 @@ public class ProvinceManager : MonoBehaviour
     }
 
     void Start()
-    { ;
+    { 
         AddProvinceData();
     }
     
      private void Update()
      {
-         if (Input.GetMouseButtonDown(0))
+         if (Input.GetKeyDown(KeyCode.Space))
          {
+             photonView.RPC("RandomProvinceDataFill", RpcTarget.All, null);
              photonView.RPC("TintProvinces", RpcTarget.All, null);
-             Debug.Log("Color is changed");
+             Debug.Log("Provinces are tinted");
          }
      }
+     
 
-     [PunRPC]
-     public void ChangeColor()
-     {
-        for (int i = 0; i < provinceList.Count; i++)
-         {
-             ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
-             switch (provinceBehaviour.province.faction)
-             {
-                 case Province.Factions.RichPospolita:
-                     provinceBehaviour.TintColor(new Color32(255, 235, 205, 255));
-                     provinceBehaviour.province.faction = Province.Factions.Hetmanate;
-                     break;
-
-                 case Province.Factions.Hetmanate:
-                     provinceBehaviour.TintColor(new Color32(225, 243, 252, 255));
-                     provinceBehaviour.province.faction = Province.Factions.Moscovy;
-                     break;
-
-                 case Province.Factions.Moscovy:
-                     provinceBehaviour.TintColor(new Color32(211, 232, 211, 255));
-                     provinceBehaviour.province.faction = Province.Factions.Khanate;
-                     break;
-
-                 case Province.Factions.Khanate:
-                     provinceBehaviour.TintColor(new Color32(252, 239, 234, 255));
-                     provinceBehaviour.province.faction = Province.Factions.RichPospolita;
-                     break;
-             }
-         }
-     }
+     // [PunRPC]
+     // public void ChangeColor()
+     // {
+     //    for (int i = 0; i < provinceList.Count; i++)
+     //     {
+     //         ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
+     //         switch (provinceBehaviour.province.faction)
+     //         {
+     //             case Province.Factions.RichPospolita:
+     //                 provinceBehaviour.TintColor(new Color32(255, 235, 205, 255));
+     //                 provinceBehaviour.province.faction = Province.Factions.Hetmanate;
+     //                 break;
+     //
+     //             case Province.Factions.Hetmanate:
+     //                 provinceBehaviour.TintColor(new Color32(225, 243, 252, 255));
+     //                 provinceBehaviour.province.faction = Province.Factions.Moscovy;
+     //                 break;
+     //             case Province.Factions.Moscovy:
+     //                 provinceBehaviour.TintColor(new Color32(211, 232, 211, 255));
+     //                 provinceBehaviour.province.faction = Province.Factions.Khanate;
+     //                 break;
+     //
+     //             case Province.Factions.Khanate:
+     //                 provinceBehaviour.TintColor(new Color32(252, 239, 234, 255));
+     //                 provinceBehaviour.province.faction = Province.Factions.RichPospolita;
+     //                 break;
+     //         }
+     //     }
+     // }
 
      void AddProvinceData ()
     {
@@ -73,13 +75,41 @@ public class ProvinceManager : MonoBehaviour
         }
         TintProvinces();
     }
-    
-    void TintProvinces()
+
+     [PunRPC]
+     public void RandomProvinceDataFill()
+     {
+         for (int i = 0; i < provinceList.Count; i++)
+         {
+             ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
+             provinceBehaviour.province.fortressState = Random.Range(0, 3);
+             provinceBehaviour.province.economicState = Random.Range(0, 3);
+             provinceBehaviour.province.militaryPower = Random.Range(0, 6) * 5000;
+
+             switch (Random.Range(0,4))
+             {
+                 case 0:
+                     provinceBehaviour.province.faction = Province.Factions.RichPospolita;
+                     break;
+                 case 1:
+                     provinceBehaviour.province.faction = Province.Factions.Hetmanate;
+                     break;
+                 case 2:
+                     provinceBehaviour.province.faction = Province.Factions.Moscovy;
+                     break;
+                 case 3:
+                     provinceBehaviour.province.faction = Province.Factions.Khanate;
+                     break;
+             }
+         }
+     }
+
+     [PunRPC]
+    public void TintProvinces()
     {
         for (int i = 0; i < provinceList.Count; i++)
         {
             ProvinceBehaviour provinceBehaviour = provinceList[i].GetComponent<ProvinceBehaviour>();
-            
             GameObject soldierRP = GameObject.Find(provinceBehaviour.province.name + "_SoldierRP");
             GameObject soldierG = GameObject.Find(provinceBehaviour.province.name + "_SoldierG");
             GameObject soldierM = GameObject.Find(provinceBehaviour.province.name + "_SoldierM");

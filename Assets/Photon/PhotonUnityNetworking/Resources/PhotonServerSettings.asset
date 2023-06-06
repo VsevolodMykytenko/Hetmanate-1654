@@ -42,6 +42,8 @@ MonoBehaviour:
   - OnMouseDown
   - AddProvinceData
   - ChangeColor
+  - TintProvinces
+  - RandomProvinceDataFill
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
